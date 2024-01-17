@@ -1,0 +1,15 @@
+/* General formatting for the body element across the website */
+body {
+    background-color: var(--grey-scale1);
+    text-align: center;
+    font-family: var(--century);
+    font-size: 17px;
+    color: var(--white);
+}
+
+.section1 {
+    background-image: url(../assets/beasty.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 1350px;
+}

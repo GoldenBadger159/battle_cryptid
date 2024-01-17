@@ -17,9 +17,7 @@ export default function Header() {
         <header>
             <div className="top">
                 <Link to="/"><img className="logo" src={Logo} alt="Logo" /></Link>
-                <h1 className="bctitle">
-                    Battle Cryptid
-                </h1>
+                <h1 className="bctitle">Battle Cryptid</h1>
                 <div>
                     {/* TODO: Implement the authorize links as a seperate
                     component and make it so that when the user is logged in
