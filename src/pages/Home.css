@@ -1,3 +1,40 @@
+@font-face {
+    font-family: copperplate-gothic;
+    src: url("../fonts/copperplate-gothic-light.ttf");
+}
+@font-face {
+    font-family: century-schoolbook;
+    src: url("../fonts/century-schoolbook.ttf");
+}
+@font-face {
+    font-family: comic-sans;
+    src: url("../fonts/ComicFuturaRegular.otf");
+}
+
+:root {
+    --copper: copperplate-gothic;
+    --century: century-schoolbook;
+    --comic: comic-sans;
+
+    --black: #040f0fff;
+    --dark-grey: #2d3a3aff;
+    --mid-grey: #637070ff;
+    --light-grey: #bcccccff;
+    --white: #ffffff;
+
+    --dark-green: #124119ff;
+    --base-green: #248232ff;
+    --light-green1: #67a170ff;
+    --light-green2: #92c199ff;
+    --light-green3: #b7e0bdff;
+
+    --grey-scale1: #0b1321ff;
+    --grey-scale2: #343d4dff;
+    --grey-scale3: #5f697aff;
+    --grey-scale4: #8b95a6ff;
+    --grey-scale5: #b7c1d3ff;
+}
+
 /* General formatting for the body element across the website */
 body {
     background-color: var(--grey-scale1);
@@ -12,4 +49,84 @@ body {
     background-position: center;
     background-size:cover;
     height: 1350px;
+}
+
+.home-books {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 75px;
+}
+
+.about {
+    background: rgba(11, 19, 33, 0.7);
+    border-radius: 20px;
+    margin-top: 200px;
+    margin-left: 20%;
+    padding: 30px;
+    width: 60%;
+    text-align: left;
+    font-family: var(--comic);
+}
+
+.about h1 {
+    color: var(--light-green1);
+    font-size: 40px;
+    font-family: var(--copper);
+}
+
+.about p {
+    color: var(--white);
+}
+
+.section2 {
+    background-color: var(--grey-scale1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mid-home {
+    text-decoration: none;
+    color: var(--light-green1);
+    border-style: ridge;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.mid-home:hover {
+    color: var(--grey-scale1);
+    background-color: var(--light-green1);
+}
+
+.creation {
+    width: 40%;
+    margin-left: 45%;
+    padding: 10px;
+    color: var(--grey-scale5);
+    font-family: var(--comic);
+    font-size: 18px;
+}
+
+.creation h1 {
+    color: var(--light-green1);
+    font-family: var(--copper);
+    margin-bottom: 20px;
+}
+
+.creation .mid-home {
+    margin-left: 70%;
+}
+
+.discord {
+    width: 40%;
+    margin-top: 250px;
+    margin-left: 10%;
+    padding: 10px;
+}
+
+.news {
+    width: 60%;
+    margin-top: 250px;
+    margin-bottom: 80px;
+    margin-left: 30%;
+    padding: 10px;
 }
