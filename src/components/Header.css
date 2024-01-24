@@ -99,16 +99,17 @@ header {
 }
 
 .link {
-    background-color: var(--light-green1);
-    color: var(--black);
+    color: var(--light-green1);
     text-decoration: none;
     display: block;
+    border-style: ridge;
     border-radius: 20px;
     width: 125px;
-    height: 25px;
 }
 
 .link:hover {
-    background-color: var(--base-green);
-    color: var(--white);
+    color: var(--grey-scale1);
+    background-color: var(--light-green1);
+    border-color: var(--light-green1);
+    border-style: solid;
 }

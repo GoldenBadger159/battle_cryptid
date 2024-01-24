@@ -60,7 +60,7 @@ body {
 .about {
     background: rgba(11, 19, 33, 0.7);
     border-radius: 20px;
-    margin-top: 200px;
+    margin-top: 250px;
     margin-left: 20%;
     padding: 30px;
     width: 60%;
@@ -95,6 +95,7 @@ body {
 .mid-home:hover {
     color: var(--grey-scale1);
     background-color: var(--light-green1);
+    border-style: none;
 }
 
 .creation {
@@ -103,7 +104,7 @@ body {
     padding: 10px;
     color: var(--grey-scale5);
     font-family: var(--comic);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .creation h1 {
@@ -121,12 +122,50 @@ body {
     margin-top: 250px;
     margin-left: 10%;
     padding: 10px;
+    color: var(--grey-scale5);
+    font-family: var(--comic);
+    font-size: 20px;
+}
+
+.discord h1 {
+    color: var(--light-green1);
+    font-family: var(--copper);
+    margin-bottom: 20px;
+}
+
+.discord .mid-home {
+    margin-left: 80%;
 }
 
 .news {
-    width: 60%;
+    width: 50%;
     margin-top: 250px;
     margin-bottom: 80px;
-    margin-left: 30%;
+    margin-left: 40%;
     padding: 10px;
+}
+
+.news h1 {
+    color: var(--light-green1);
+    font-family: var(--copper);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.news-content h2 {
+    color: var(--white);
+}
+
+.news-content {
+    font-size: 20px;
+    font-family: var(--comic);
+    color: var(--grey-scale5);
+    padding: 30px;
+    text-align: left;
+    background-color: rgba(46, 55, 63, 0.5);
+    border-radius: 20px;
+}
+
+.news-content .mid-home {
+    margin-left: 38%;
 }

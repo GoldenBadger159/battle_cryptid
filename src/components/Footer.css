@@ -40,7 +40,7 @@ footer {
     border-top-style: ridge;
     border-color: var(--grey-scale4);
     font-family: var(--century);
-    height: 250px;
+    height: auto;
     width: 100%;
 }
 
@@ -56,7 +56,7 @@ footer {
     margin: auto;
     margin-left: 2rem;
     margin-right:0;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .foot-bctitle {
@@ -64,12 +64,13 @@ footer {
     color: var(--white);
     font-family: var(--copper);
     margin-left: 0;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .links {
     display: flex;
     flex-direction: column;
+    flex-wrap:wrap;
     align-items: center;
     text-align: center;
     width: 250px;
@@ -80,17 +81,18 @@ footer {
 
 .links h1 {
     border-bottom-style: double;
-    font-size: 30px;
+    font-size: 20px;
     width: 80%;
 }
 
 .foot-link {
     text-decoration: none;
     color: var(--grey-scale5);
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .copyright {
     margin-left: 15px;
+    margin-top: -20px;
     color: var(--grey-scale4);
 }
