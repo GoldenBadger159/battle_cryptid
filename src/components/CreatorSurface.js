@@ -1,9 +1,9 @@
 import React from "react"
 // import { Link } from "react-router-dom";
-import "./CreatorNavigator.css"
+import "./CreatorSurface.css"
 
 
-export default function CreatorNavigator() {
+export default function CreatorSurface() {
     return (
         <div className="selector">
             <h1>Create your character using the sections below</h1>

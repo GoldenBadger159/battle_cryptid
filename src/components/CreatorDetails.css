@@ -1,0 +1,107 @@
+@font-face {
+    font-family: copperplate-gothic;
+    src: url("../fonts/copperplate-gothic-light.ttf");
+}
+@font-face {
+    font-family: century-schoolbook;
+    src: url("../fonts/century-schoolbook.ttf");
+}
+@font-face {
+    font-family: comic-sans;
+    src: url("../fonts/ComicFuturaRegular.otf");
+}
+
+:root {
+    --copper: copperplate-gothic;
+    --century: century-schoolbook;
+    --comic: comic-sans;
+
+    --black: #040f0fff;
+    --dark-grey: #2d3a3aff;
+    --mid-grey: #637070ff;
+    --light-grey: #bcccccff;
+    --white: #ffffff;
+
+    --dark-green: #124119ff;
+    --base-green: #248232ff;
+    --light-green1: #67a170ff;
+    --light-green2: #92c199ff;
+    --light-green3: #b7e0bdff;
+
+    --grey-scale1: #0b1321ff;
+    --grey-scale2: #343d4dff;
+    --grey-scale3: #5f697aff;
+    --grey-scale4: #8b95a6ff;
+    --grey-scale5: #b7c1d3ff;
+}
+
+.sub-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: 700px;
+    background-color: rgba(11, 19, 33, 0.7);
+    color: var(--white);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border: 5px ridge var(--light-green1);
+}
+
+#char-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+}
+
+#char-info label {
+    font-size: 20px;
+    font-family: var(--copper);
+}
+
+#char-info select {
+    font-family: var(--copper);
+}
+
+#char-name {
+    width: 220px;
+    height: 28px;
+    font-family: var(--copper);
+    margin-right: auto;
+}
+
+#attributes h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    font-family: var(--copper);
+}
+
+#attributes p {
+    margin: 15px;
+    text-align: left;
+    font-family: var(--comic);
+}
+
+.atr-selectors {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 25px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.atr-selectors label {
+    width: 120px;
+    text-align: end;
+    margin-bottom: 15px;
+    font-family: var(--copper);
+}
+
+.atr-selectors select {
+    margin-bottom: 15px;
+    font-family: var(--copper);
+}
