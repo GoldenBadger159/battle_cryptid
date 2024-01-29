@@ -1,0 +1,38 @@
+@font-face {
+    font-family: copperplate-gothic;
+    src: url("../fonts/copperplate-gothic-light.ttf");
+}
+@font-face {
+    font-family: century-schoolbook;
+    src: url("../fonts/century-schoolbook.ttf");
+}
+@font-face {
+    font-family: comic-sans;
+    src: url("../fonts/ComicFuturaRegular.otf");
+}
+
+:root {
+    --copper: copperplate-gothic;
+    --century: century-schoolbook;
+    --comic: comic-sans;
+
+    --black: #040f0fff;
+    --dark-grey: #2d3a3aff;
+    --mid-grey: #637070ff;
+    --light-grey: #bcccccff;
+    --white: #ffffff;
+
+    --dark-green: #124119ff;
+    --base-green: #248232ff;
+    --light-green1: #67a170ff;
+    --light-green2: #92c199ff;
+    --light-green3: #b7e0bdff;
+
+    --grey-scale1: #0b1321ff;
+    --grey-scale2: #343d4dff;
+    --grey-scale3: #5f697aff;
+    --grey-scale4: #8b95a6ff;
+    --grey-scale5: #b7c1d3ff;
+}
+
+

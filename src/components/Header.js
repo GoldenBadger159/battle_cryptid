@@ -26,13 +26,13 @@ export default function Header() {
                     <Link className="authorize" to="/signup">Sign Up</Link>
                     <img className="social" src={Facebook} alt="facebook" />
                     <img className="social" src={Instagram} alt="instagram" />
-                    <img className="social" src={Discord} alt="discord" />
-                    <img className="social" src={Patreon} alt="patreon" />
+                    <a target="_blank" rel="noreferrer" href="https://discord.gg/CjEjzEat4J" ><img className="social" src={Discord} alt="discord" /></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.patreon.com/user?u=14329310" ><img className="social" src={Patreon} alt="patreon" /></a>
                 </div>
             </div>
             <ul className="nav">
                 <li className="nav-item"><Link className="link" to="/home">Home</Link></li>
-                <li className="nav-item"><Link className="link" to="">Characters</Link></li>
+                <li className="nav-item"><Link className="link" to="/no-creation">Characters</Link></li>
                 <li className="nav-item"><Link className="link" to="">The Arcanum</Link></li>
                 <li className="nav-item"><Link className="link" to="">Feedback</Link></li>
                 <li className="nav-item"><Link className="link" to="">Community</Link></li>
