@@ -1,0 +1,35 @@
+/Below is the basic format that classes will take for being displayed in the character creator. 
+
+    "_className": {
+        "cname": "",
+        "hitDice": 0,
+        "defMod": 0,
+        "agilMod": 0,
+        "martDef": 0,
+        "speed": 0,
+        "talentPoints": 0,
+        "classTalents": [""],
+        "desc": "",
+        "quick": "",
+        "options": {
+            "_lvl_": {
+                "0": {
+                    "desc": "",
+                    "number": 0,
+                    "options": [""]
+                },
+                "1": {
+                    "desc": "",
+                    "number": 0,
+                    "options": [""]
+                }
+            },
+            "_lvl_": {
+                "0": {
+                    "desc": "",
+                    "number": 0,
+                    "options": [""]
+                }
+            }
+        }
+    }

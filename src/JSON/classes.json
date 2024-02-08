@@ -1,0 +1,110 @@
+{
+    "abjurer": {
+        "cname": "Abjurer",
+        "hitDice": 6,
+        "defMod": 2,
+        "agilMod": 2,
+        "martDef": 0,
+        "speed": 3,
+        "talentPoints": 3,
+        "classTalents": "Animals, Knowledge Mundane, Knowledge Mythical, Persuasion, Surgical",
+        "desc": "\"Your allies are your strength; you must do everything you can to keep them alive. Hopefully, they will see this and keep you alive as well.\" – Words of Elder Bombasa to his apprentice. The Abjurer uses his faith and prayer to grant him strength in battle. His main focus is to make sure everyone in the party stays healthy and healed. However, when it comes to destroying the undead no one rivals the Abjurers might.",
+        "quick": "Abjurers are as closely tied to their deity as an Oni to his hatred, and thus their personality is greatly affected by the teachings of their patron. To create a quick Abjurer, choose Armid, the god of healing, as your deity and take the Buff and Heal Schools at level 1. Most Abjurers with these traits would have a formal education within one of the many temples/hospitals dedicated to Armid. To further speed the process, place your highest Defining Scores as Constitution and Intelligence.",
+        "options": {
+            "1": {
+                "0": {
+                    "desc": "Choose 1 of the Following",
+                    "number": 1,
+                    "options": ["Blunt Staves Proficiency", "Mace and Hammer Proficiency"]
+                },
+                "1": {
+                    "desc": "Choose 2 from the Following",
+                    "number": 2,
+                    "options": ["Buff School", "Heal School", "Calligraphy School"]
+                }
+            },
+            "2": {
+                "0": {
+                    "desc": "Gain the Following",
+                    "number": 1,
+                    "options": ["Staff Proficiency"]
+                }
+            },
+            "10": {
+                "0": {
+                    "desc": "Choose 1 of the Following",
+                    "number": 1,
+                    "options": ["Alchemy Training", "Agility Training", "Blood School", "Bomb Training", "Hydro School", "Martial Training", "Necro School", "Soul Training"]
+                }
+            }
+        }
+    },
+    "alchemist": {
+        "cname": "Alchemist",
+        "hitDice": 4,
+        "defMod": 1,
+        "agilMod": 2,
+        "martDef": 1,
+        "speed": 3,
+        "talentPoints": 5,
+        "classTalents": "Craft, Disguise, Knowledge Mundane, Knowledge Mythical, Stealth, Surgical",
+        "desc": "\"The gods created the Races of Eldoric from the four elements. I simply found the weaknesses of those elements and exploited them\" - Famous last words of Septimius Bright before his execution. Alchemists bring a sense of chaos to the field with their bombs and poisons. Because of their ability to make health potions, they may also serve as a decent party healer. They create wild concoctions that allow them to fill almost any role they need to in a party and experts at using transmutations to disable enemy tactics.",
+        "quick": "The most important tool an alchemist has is his mind. Rather than relying on brute strength or ranged weapons to fight, an alchemist uses different potions, poisons, concoctions and forced mutations to fight his enemies. The way two alchemists differ is less the skills they obtain and more the way they incorporate their skills into their own fighting style. This may mean you play a support role, or you are a crazy drug induced fighter. Whatever your means of fighting, the concoctions you choose to make will support this.<>To quickly get an alchemist into action put your two highest modifiers into Intelligence and Wisdom as they will affect most of your ability to prepare and make potions. Select whichever proficiency suits your desired play style. Keep in mind that your background should reflect some education or a life of experimentation and study.",
+        "options": {
+            "1": {
+                "0": {
+                    "desc": "Gain Both of the Following",
+                    "number": 2,
+                    "options": ["Alchemy Training", "Bomb Training"]
+                },
+                "1": {
+                    "desc": "Choose 1 of the Following",
+                    "number": 1,
+                    "options": ["Whip and Chain Proficiency", "One-Handed Crossbow Proficiency"]
+                }
+            }
+        }
+    },
+    "archer": {
+        "cname": "Archer",
+        "hitDice": 6,
+        "defMod": 1,
+        "agilMod": 2,
+        "martDef": 1,
+        "speed": 4,
+        "talentPoints": 3,
+        "classTalents": "Animals, Athletics, Fingers, Perception, Survive",
+        "desc": "\"Only a fool runs headfirst into a battle with his sword raised, it is much better to remain far back and wear down the enemy before delivering a lethal strike.\" – Instructions from general Lee Tow before the battle of Odessia. The Archer class offers a variety of play styles including stealthy, long-range, poison using assassins all the way to Arcane marksman using enchantments and illusions. They eventually unlock the ability to make and set up traps on the battlefield allowing them to become good tacticians at higher levels.",
+        "quick": "Archers are meant to combine long range fighting and mobility into a maelstrom of confusion and tactical control. Having 4 weapon proficiencies and potentially 2 schools or trainings by level 6 gives an Archer many paths they may take to become powerful. For a quick and easy to use archer use a combination of throwing knives and a short bow. Take the imbue school at level 3 and the 1 handed crossbow proficiency at level 4. At Level 6 stealth training will further supplement your abilities.<>Choose Dexterity and Wisdom as your two highest modifiers with an emphasis on dexterity. Keep in mind that being an archer will also influence your way of life and how your character may act, although the diversity in this group may be more than that of the Abjurer or Alchemist.",
+        "options": {
+            "1": {
+                "0": {
+                    "desc": "Gain All the Following",
+                    "number": 3,
+                    "options": ["Short Bow Proficiency", "Long Bow Proficiency", "Throwing Weapon Proficiency"]
+                }
+            },
+            "3": {
+                "0": {
+                    "desc": "Choose 1 of the Following",
+                    "number": 1,
+                    "options": ["Animal School", "Imbue School", "Plant School", "Sonic School", "Alchemy Training", "Animal Follower"]
+                }
+            },
+            "4": {
+                "0": {
+                    "desc": "Choose 1 of the Following",
+                    "number": 1,
+                    "options": ["One-Handed Crossbow Proficiency", "Two-Handed Crossbow Proficiency"]
+                }
+            },
+            "6": {
+                "0": {
+                    "desc": "Choose 1 of the Following",
+                    "number": 1,
+                    "options": ["Illusion School", "Stealth Training"]
+                }
+            }
+        }
+    }
+}

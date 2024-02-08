@@ -69,7 +69,7 @@ export default function Home() {
                         and fostering creativity. Engage with fellow memebers to share your ideas, concept art, and contribute to the ever-expanding lore. 
                         Find-like minded adventurers to form groups and embark on thrilling quests together. Join us on this cryptic journey, where curiosity meets comraderie!
                     </p>
-                    <a className="mid-home" target="_blank" href="https://discord.gg/CjEjzEat4J" >Join Now!</a>
+                    <a className="mid-home" target="_blank" rel="noreferrer" href="https://discord.gg/CjEjzEat4J" >Join Now!</a>
                 </div>
                 <div class="news">
                     <h1>Newest Developments</h1>

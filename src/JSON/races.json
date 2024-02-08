@@ -1,0 +1,88 @@
+{
+    
+    "human": {
+        "name": "Human",
+        "desc": "Humans are one of the youngest races on Eldoric but are also one of the most prolific and thus inhabit much of the world. Humans come in many different colors and varieties. Their cultures seem to change at incredible rates, given their conditions and influences, as compared to the other races found across the planet’s inhabited lands. Due to this many of the other races on Eldoric tend to believe that humans do not have culture at all and simply follow whatever it is that fancies them in that moment.<>Humans are the most adaptive race on Eldoric. They have managed to adapt to almost every climate in the world and have developed many diverse cultures. The main human kingdom is found on the south-west side of Eldoric and is called “The Kingdom of Relandra”.<>Humans tend to live anywhere between 60 and 80 years but some have been known to survive as long as 120 years.",
+        "recoms":"Due to their adaptability Humans can Thrive in any class role.",
+        "abilityMods": "Humans can choose to take no ability modifiers or use the following list:<>+2 to any two stats<>+1 to one stat<>-2 to any one stat<>If any stat modifier is chosen, you must use the entire list.",
+        "speed": 4,
+        "mindBody": 3,
+        "size": "Humans are to be considered medium creatures.",
+        "languages": ["The default language of Humans is common."],
+        "racialAbilities": "Humans do not gain any racial abilities."
+    },
+    
+    "kiokumori": {
+        "name": "Kiokumori",
+        "desc": "Kiokumori (pronounced key-oh-koo-moor-e) are very small forest dwellers standing at around 3 feet tall. A Kiokumori would appear to be another simple-minded forest animal; however, they are quite intelligent, often surpassing the brainpower of humans. Kiokumori are covered in rich black or brown fur. They have a thin layer of skin between their underarms and legs which allows for gliding through the forest. They have tails with feathers to allow for better control while gliding, and clawed hands that allow for grabbing trees and easy climbing and have a pleasant herbal smell.<>Kiokumori are one of the only races that do not start out speaking common, and instead speak a language of chirps and clicks. Kiokumori love the forest and all its inhabitants. They make their homes in the tall trees of the north, burrowing little tunnel homes into the tree’s trunk but are always careful to make sure they do not hurt the tree. Kiokumori live in large communities far above the forest floor called Groups. Some groups can become quite large and Kiokumori chirping can be heard across the forest as they barter and trade nuts and fruits.<>Each Kiokumori group has an \"Elder One.\" All Kiokumori have the magical ability to share memories by touching foreheads and all precious memories are given to the elder one for storage. Memories are considered sacred to the Kiokumori and the elder one stores them into glass orbs. Stealing one of these glass orbs is the greatest offense anyone can do in a Kiokumori community.<>When a Kiokumori is posed with a difficult experience or trial, he is encouraged to seek out solutions for as long possible before, in the case of not being able to solve the problem, he would consult the Elder One for advice and wisdom. Part of the Elder One’s responsibilities is knowing which memories they can share to help those seeking advice. Due to this ritual Kiokumori have difficulty grasping the concept of lying and are deeply compassionate as a people.<>Kiokumori are incredibly talented at learning and love the pursuit of knowledge. However, they do not have very good street smarts and may run into a busy road or may appear to be a bit socially awkward. Because of this many Kiokumori have met premature deaths in large cities, and they have learned it is best to stay in the forest. However, a few Kiokumori still leave the forest in search of the magical knowledge held by other species. Kiokumori are often considered magical species because of their talent with spells and because of this the Nobari often go on hunting sprees for them. Capturing them and skinning them alive.",
+        "recoms": "Archer, Bard, Druid, Mechanist, Monk, Theurgist",
+        "abilityMods": {
+            "Str": -2,
+            "Dex": 1,
+            "Con": -1,
+            "Int": 2,
+            "Wis": 1,
+            "Cha": 0
+        },
+        "speed": 5,
+        "mindBody": 3,
+        "size": "Kiokumori are considered small creatures.",
+        "languages": "Kiokumori speak the Click and Chirp language by default.",
+        "racialAbilities": {
+            "1": {
+                "level": "1",
+                "desc1": "Kiokumori gain a climb speed of 30 ft. but only on wooden surfaces",
+                "desc2": "Kiokumori can only have 2 inebriation points before becoming drunk and only 4 before passing out"
+            },
+            "2": {
+                "level": "2",
+                "desc1": "Kiokumori automatically succeed in jumps that are less than 15 ft."
+            },
+            "4": {
+                "level": "4",
+                "desc1": "Kiokumori gain a +2-stealth bonus when hiding in shadows or darkness."
+            },
+            "8": {
+                "level": "8",
+                "desc1": "Kiokumori do not take fall damage."
+            }
+        }
+    },
+    
+    "lihog": {
+        "name": "Lihog",
+        "desc": "Lihogs are a sentient quadruped mix between hogs and lizards that live in active volcanoes or deep underground where magma is present as they are geovores (they eat rocks) and swim in lava frequently. Due to their rarity, most common folk don’t know of their existence.<>Lihogs cannot speak instead communicating using a series of clicks and chirps as their version of language. Due to their lack of arms, Lihogs wield tools and weapons using their prehensile tongue.<>Despite their general seclusion from most other sentient beings, Lihogs are an extremely social race who thrive off of physical activities rather than conversation.<>Lihogs have many large colonies across Eldoric, having nomadic groups take excursions through the mantle of the planet, though this is an extremely difficult, and therefore rare, event. Being largely isolated from other factions of Lihogs, and other races in general, has led Lihogs to greatly value information and stories.<>Lihogs are unique in that they never stop growing. This, combined with the fact that Lihogs can live for almost a thousand years, has inspired Lihogs to form their governments based around size, with the largest of Lihogs being deemed the leader. After a Lihog gets bigger than what could be considered a medium sized creature their sheer size makes it impossible for them to survive outside of magma.",
+        "recoms": "Lihogs can succeed in any class role although, keep in mind that they cannot wield anything that takes two hands. (Two handed swords or axes may be wielded if the character has a strength score of 18 or higher)",
+        "abilityMods": {
+            "Str": 2,
+            "Dex": -2,
+            "Con": 2,
+            "Int": 0,
+            "Wis": 4,
+            "Cha": -4
+        },
+        "speed": 2,
+        "mindBody": 3,
+        "size": "Players who choose Lihogs can choose to be either small or medium with this choice being permanent as the general campaign doesn’t last long enough for them to grow out of their size category.",
+        "languages": "Lihogs speak the click and chirp language by default. A Lihog may speak broken versions of other languages but due to their mouth not being suited to them, will never sound normal.",
+        "racialAbilities": {
+            "1": {
+                "level": "1",
+                "desc1": "Lihogs have a swim speed of 10 but only in lava. They may breathe in lava and are immune to lava, fire and heat damage.",
+                "desc2": "Lihogs have a prehensile tongue that they may use as a hand, however, Lihogs may not use bows or crossbows"
+            },
+            "2": {
+                "level": "2",
+                "desc1": "As a move action a Lihog may devour a rock to gain 1 rock point. The player may have up to 3 rock points at any given time. Rock points only last for 1 hour.",
+                "desc2": "As a normal action a Lihog may use 1 rock point to make a chomp attack. This attack deals (level)d4 damage + Str mod (capping at 10d4). The “To Hit” with this attack is 1d20 + Str mod and is aimed at the defense score."
+            },
+            "5": {
+                "level": "5",
+                "desc1": "As a normal action while wrestling an opponent a Lihog may use 3 rock points to heat up their body to 1,200 degrees C. This attack deals (level)d6 damage + Con mod (to a cap of 4d6). The “To Hit” with this attack is 1d20 + Con mod and is aimed at the Martial defense score."
+            },
+            "8": {
+                "level": "8",
+                "desc1": "As a normal action the player may use 3 rock points to fill a 15ft. square cone in front of them with lava. (lava deals 8d6 + con mod damage each turn the enemy remains in it)"}
+        }
+    }
+}

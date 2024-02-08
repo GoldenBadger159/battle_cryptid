@@ -1,0 +1,96 @@
+@font-face {
+    font-family: copperplate-gothic;
+    src: url("../../fonts/copperplate-gothic-light.ttf");
+}
+@font-face {
+    font-family: century-schoolbook;
+    src: url("../../fonts/century-schoolbook.ttf");
+}
+@font-face {
+    font-family: comic-sans;
+    src: url("../../fonts/ComicFuturaRegular.otf");
+}
+
+:root {
+    --copper: copperplate-gothic;
+    --century: century-schoolbook;
+    --comic: comic-sans;
+
+    --black: #040f0fff;
+    --dark-grey: #2d3a3aff;
+    --mid-grey: #637070ff;
+    --light-grey: #bcccccff;
+    --white: #ffffff;
+
+    --dark-green: #124119ff;
+    --base-green: #248232ff;
+    --light-green1: #67a170ff;
+    --light-green2: #92c199ff;
+    --light-green3: #b7e0bdff;
+
+    --grey-scale1: #0b1321ff;
+    --grey-scale2: #343d4dff;
+    --grey-scale3: #5f697aff;
+    --grey-scale4: #8b95a6ff;
+    --grey-scale5: #b7c1d3ff;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;;
+    width: 1525px;
+}
+
+.selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 700px;
+    background-color: rgba(11, 19, 33, 0.7);
+    color: var(--white);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border: 5px ridge var(--light-green1);
+    margin: 8px;
+}
+
+.selector h1 {
+    font-size: 22px;
+    margin: 10px;
+    margin-bottom: 25px;
+    font-family: var(--copper);
+}
+
+.selector button {
+    width: 300px;
+    height: 75px;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px;
+    color: var(--light-green1);
+    background-color: var(--grey-scale1);
+    border-style: ridge;
+    border-color: var(--light-green1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.selector #save-char {
+    width: 175px;
+    height: auto;
+    padding: 0;
+    margin-top: 100px;
+    text-align: center;
+    border: none;
+    background-color: rgba(11, 19, 33, 0.0);
+}
+
+.selector #char-sheet {
+    height: auto;
+    text-align: center;
+}
