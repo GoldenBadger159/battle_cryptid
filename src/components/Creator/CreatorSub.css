@@ -85,7 +85,7 @@
 
 #attributes h1 {
     font-size: 28px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-family: var(--copper);
     color: var(--light-green1);
@@ -105,13 +105,13 @@
     flex-wrap: wrap;
     margin: 25px;
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .atr-selectors label {
     width: 120px;
     text-align: end;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-family: var(--copper);
 
 }

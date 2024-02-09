@@ -1,9 +1,25 @@
 import React, {useState} from "react";
 import "./CreatorSub.css"
 import Details from "./Details/Details";
+// import { useAttributeContext } from "../../contexts/AttributeContext"
 
 
 export default function CreatorDetails() {
+    // const { 
+    //     strength,
+    //     setStrength,
+    //     dexterity,
+    //     setDexterity,
+    //     constitution,
+    //     setConstitution,
+    //     intelligence,
+    //     setIntelligence,
+    //     wisdom,
+    //     setWisdom,
+    //     charisma,
+    //     setCharisma
+    //  } = useAttributeContext()
+
     // list of options
     const options = [
         {
@@ -34,12 +50,12 @@ export default function CreatorDetails() {
 
     // list of select names
     const selectNames = [
-        "Strength:",
-        "Dexterity:",
-        "Constitution:",
-        "Intelligence:",
-        "Wisdom:",
-        "Charisma:"
+        "Strength",
+        "Dexterity",
+        "Constitution",
+        "Intelligence",
+        "Wisdom",
+        "Charisma"
     ]
 
     const [chosenOptions, setChosenOptions] = useState({});
@@ -65,9 +81,9 @@ export default function CreatorDetails() {
     const selectRender = selectNames.map((name, index) => {
         return (
             <>
-                <label for={name}>{name}</label>
+                <label for={name}>{name}:</label>
                 <select name={name} key={index} onChange={handleChange} value={chosenOptions[name] || ''}
-                        required={index === 0} >
+                        required={index === 0} id={name}>
                     <option value=''/>
                     {options.filter(({value}) => !isChosenByOther(value, name))
                         .map(({label, value}, oIndex) =>
@@ -77,17 +93,21 @@ export default function CreatorDetails() {
             </>
         )
     })
+
+    // const formSubmit = (e) => {
+    //     console.log(e.Strength)
+    // }
     
     return (
         <div className="sub-parent">
             <div className="sub-selector">
                 {/* TODO: set the form up to change the name and level of the character
                 without having to press a submit button. do this using onChange and useState*/}
-                <form id="char-info">
+                <div id="char-info">
                     <label for="char-name">Name:</label>
                     <input type="text" id="char-name" name="char-name" />
                     <label for="level">Level:</label>
-                    <select name="level" id="level">
+                    <select name="level" id="level" type="submit">
                         <option value="1">1</option>
                         <option value="1">2</option>
                         <option value="1">3</option>
@@ -109,8 +129,8 @@ export default function CreatorDetails() {
                         <option value="1">19</option>
                         <option value="1">20</option>
                     </select>
-                </form>
-                <form id="attributes">
+                </div>
+                <div id="attributes" >
                     <h1>Character Attributes</h1>
                     <p>Characters have 6 Defining Scores: Strength (Str), Constitution (Con), Dexterity (Dex), 
                         Intelligence (Int), Wisdom (Wis), and Charisma (Cha). As your character will essentially 
@@ -124,8 +144,7 @@ export default function CreatorDetails() {
                     <div className="atr-selectors">
                         {selectRender}
                     </div>
-                    
-                </form>
+                </div>
             </div>
             <Details />
         </div>
