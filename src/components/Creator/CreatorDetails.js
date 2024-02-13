@@ -1,24 +1,18 @@
 import React, {useState} from "react";
 import "./CreatorSub.css"
 import Details from "./Details/Details";
-// import { useAttributeContext } from "../../contexts/AttributeContext"
+import { useAttributeContext } from "../../contexts/AttributeContext"
 
 
 export default function CreatorDetails() {
-    // const { 
-    //     strength,
-    //     setStrength,
-    //     dexterity,
-    //     setDexterity,
-    //     constitution,
-    //     setConstitution,
-    //     intelligence,
-    //     setIntelligence,
-    //     wisdom,
-    //     setWisdom,
-    //     charisma,
-    //     setCharisma
-    //  } = useAttributeContext()
+    const { 
+        updateStr,
+        updateDex,
+        updateCon,
+        updateInt,
+        updateWis,
+        updateCha
+     } = useAttributeContext()
 
     // list of options
     const options = [
@@ -28,19 +22,19 @@ export default function CreatorDetails() {
         },
         {
             label: '14',
-            value: '14-1'
+            value: '14'
         },
         {
             label: '14',
-            value: '14-2'
+            value: '14-1'
+        },
+        {
+            label: '12',
+            value: '12'
         },
         {
             label: '12',
             value: '12-1'
-        },
-        {
-            label: '12',
-            value: '12-2'
         },
         {
             label: '10',
@@ -75,6 +69,35 @@ export default function CreatorDetails() {
 
     const handleChange = (ev) => {
         setChosenOptions({...chosenOptions, [ev.target.name]: ev.target.value});
+        let value = ""
+        if (ev.target.value === "14-1") {
+           value = "14"
+        } else if (ev.target.value === "12-1") {
+            value = "12"
+        } else {value = ev.target.value}
+        switch (ev.target.name) {
+            case "Strength": 
+                updateStr(value)
+                break;
+            case "Dexterity": 
+                updateDex(value)
+                break;
+            case "Constitution": 
+                updateCon(value)
+                break;
+            case "Intelligence": 
+                updateInt(value)
+                break;
+            case "Wisdom": 
+                updateWis(value)
+                break;
+            case "Charisma": 
+                updateCha(value)
+                break;
+            default: 
+                console.log("Select tag not recognized")
+                break;
+        }
     };
 
     // Runs through the list of selector names provided above and creates the neccessary elements with corresponding labels
