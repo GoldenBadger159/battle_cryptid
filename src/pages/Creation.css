@@ -62,7 +62,7 @@
 .creator-banner {
     display: flex;
     justify-content: flex-start;
-    width: 76%;
+    width: 1455px;
     margin-bottom: -15px;
     background-color: rgba(11, 19, 33, 0.7);
     color: var(--white);

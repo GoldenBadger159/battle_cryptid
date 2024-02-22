@@ -1,19 +1,9 @@
 import React, {useState} from "react";
 import "./CreatorSub.css"
 import Details from "./Details/Details";
-import { useAttributeContext } from "../../contexts/AttributeContext"
 
 
-export default function CreatorDetails() {
-    const { 
-        updateStr,
-        updateDex,
-        updateCon,
-        updateInt,
-        updateWis,
-        updateCha
-     } = useAttributeContext()
-
+export default function CreatorDetails({ setItem, setValue, setCharName, setLevel }) {
     // list of options
     const options = [
         {
@@ -67,38 +57,35 @@ export default function CreatorDetails() {
         return false;
     };
 
+    // handles changes to the attribute selectors
     const handleChange = (ev) => {
         setChosenOptions({...chosenOptions, [ev.target.name]: ev.target.value});
-        let value = ""
+        let value = 0
         if (ev.target.value === "14-1") {
-           value = "14"
+           value = 14
         } else if (ev.target.value === "12-1") {
-            value = "12"
-        } else {value = ev.target.value}
-        switch (ev.target.name) {
-            case "Strength": 
-                updateStr(value)
-                break;
-            case "Dexterity": 
-                updateDex(value)
-                break;
-            case "Constitution": 
-                updateCon(value)
-                break;
-            case "Intelligence": 
-                updateInt(value)
-                break;
-            case "Wisdom": 
-                updateWis(value)
-                break;
-            case "Charisma": 
-                updateCha(value)
-                break;
-            default: 
-                console.log("Select tag not recognized")
-                break;
-        }
+            value = 12
+        } else if (ev.target.value === "") {
+            value = 10
+        } else {value = parseInt(ev.target.value)}
+        setItem(ev.target.name)
+        setValue(value)
     };
+
+    // Handles changes to the character name after an amount of inactivity.
+    const nameChange = (e) => {
+        setTimeout(() => {
+            if (e.target.value === "") {
+                setCharName("Character Name")
+            } else {
+                setCharName(e.target.value)
+            }
+        }, 1500)
+    }
+    // Handles changes to the characters level
+    const lvlChange = (e) => {
+        setLevel(e.target.value)
+    }
 
     // Runs through the list of selector names provided above and creates the neccessary elements with corresponding labels
     const selectRender = selectNames.map((name, index) => {
@@ -116,10 +103,6 @@ export default function CreatorDetails() {
             </>
         )
     })
-
-    // const formSubmit = (e) => {
-    //     console.log(e.Strength)
-    // }
     
     return (
         <div className="sub-parent">
@@ -128,29 +111,29 @@ export default function CreatorDetails() {
                 without having to press a submit button. do this using onChange and useState*/}
                 <div id="char-info">
                     <label for="char-name">Name:</label>
-                    <input type="text" id="char-name" name="char-name" />
+                    <input type="text" id="char-name" name="char-name" onChange={nameChange}/>
                     <label for="level">Level:</label>
-                    <select name="level" id="level" type="submit">
+                    <select name="level" id="level" onChange={lvlChange}>
                         <option value="1">1</option>
-                        <option value="1">2</option>
-                        <option value="1">3</option>
-                        <option value="1">4</option>
-                        <option value="1">5</option>
-                        <option value="1">6</option>
-                        <option value="1">7</option>
-                        <option value="1">8</option>
-                        <option value="1">9</option>
-                        <option value="1">10</option>
-                        <option value="1">11</option>
-                        <option value="1">12</option>
-                        <option value="1">13</option>
-                        <option value="1">14</option>
-                        <option value="1">15</option>
-                        <option value="1">16</option>
-                        <option value="1">17</option>
-                        <option value="1">18</option>
-                        <option value="1">19</option>
-                        <option value="1">20</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
                     </select>
                 </div>
                 <div id="attributes" >

@@ -3,7 +3,7 @@ import "./CreatorSub.css"
 import classes from "../../JSON/classes.json"
 import ClassDetails from "./Details/ClassDetails";
 
-export default function CreatorClasses() {
+export default function CreatorClasses({ setMainClass }) {
 
     const [isSelected, setIsSelected] = useState("abjurer")
 
@@ -13,9 +13,18 @@ export default function CreatorClasses() {
         console.log(id);
     };
 
+    const classChoice = (e) => {
+        const data = Object.values(classes[e.target.id])
+        setMainClass(data[0])
+    }
+
     const renderClasses = Object.values(classes).map((item, index) => {
         return (
-            <button onClick={handleClick} className="button-selector" key={index} id={item.cname.toLowerCase()}>{item.cname}</button>
+            <div className="button-selector" onClick={handleClick} id={item.cname.toLowerCase()}>
+                <button onClick={handleClick} className="option-name" key={index} id={item.cname.toLowerCase()}>{item.cname}</button>
+                <button onClick={classChoice} className="choose-item" id={item.cname.toLowerCase()}>Select Class</button>
+            </div>
+            
         )
     })
 

@@ -1,12 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./CreatorSub.css"
 import races from "../../JSON/races.json"
 import RaceDetails from "./Details/RaceDetails";
 
 
-export default function CreatorRaces() {
-
+export default function CreatorRaces({ setRace, setStrMod, setDexMod, setConMod, setIntMod, setWisMod, setChaMod }) {
     const [isSelected, setIsSelected] = useState("human")
+
+    const [modStr, setModStr] = useState(0)
+    const [modDex, setModDex] = useState(0)
+    const [modCon, setModCon] = useState(0)
+    const [modInt, setModInt] = useState(0)
+    const [modWis, setModWis] = useState(0)
+    const [modCha, setModCha] = useState(0)
+
+    useEffect(() => {
+        console.log(modStr)
+        console.log(modDex)
+        console.log(modCon)
+        console.log(modInt)
+        console.log(modWis)
+        console.log(modCha)
+    }, [modStr, modDex, modCon, modInt, modWis, modCha])
 
     const handleClick = (e) => {
         const id = e.target.id;
@@ -14,9 +29,23 @@ export default function CreatorRaces() {
         console.log(id);
     };
 
+    const raceChoice = (e) => {
+        const data = Object.values(races[e.target.id])
+        setRace(data[0])
+        setStrMod(modStr)
+        setDexMod(modDex)
+        setConMod(modCon)
+        setIntMod(modInt)
+        setWisMod(modWis)
+        setChaMod(modCha)
+    }
+
     const renderRaces = Object.values(races).map((item, index) => {
         return (
-            <button onClick={handleClick} className="button-selector" key={index} id={item.name.toLowerCase()}>{item.name}</button>
+            <div className="button-selector" onClick={handleClick} id={item.name.toLowerCase()}>
+                <button onClick={handleClick} className="option-name" key={index} id={item.name.toLowerCase()}>{item.name}</button>
+                <button onClick={raceChoice} className="choose-item" id={item.name.toLowerCase()}>Select Race</button>
+            </div>
         )
     })
 
@@ -30,7 +59,9 @@ export default function CreatorRaces() {
                     suggest new race ideas and give feedback on existing races.
                 </p>
             </div>
-            <RaceDetails race={isSelected}/>
+            <RaceDetails race={isSelected} 
+                setStrMod={setModStr} setDexMod={setModDex} setConMod={setModCon}
+                setIntMod={setModInt} setWisMod={setModWis} setChaMod={setModCha} />
         </div>
     )
 }

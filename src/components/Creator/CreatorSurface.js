@@ -6,7 +6,9 @@ import CreatorEquipment from "./CreatorEquipment"
 import "./CreatorSurface.css"
 
 
-export default function CreatorSurface() {
+export default function CreatorSurface({ setItem, setValue, setCharName, setLevel, setRace, setMainClass,
+                                        setStrMod, setDexMod, setConMod, setIntMod, setWisMod, setChaMod
+}) {
     const [isSelected, setIsSelected] = useState()
 
     const handleClick = (e) => {
@@ -18,15 +20,18 @@ export default function CreatorSurface() {
     const renderChild = () => {
         switch (isSelected) {
             case "details":
-                return <CreatorDetails />
+                return <CreatorDetails setItem={setItem} setValue={setValue} setCharName={setCharName} setLevel={setLevel}/>
             case "race":
-                return <CreatorRaces />
+                return <CreatorRaces 
+                    setRace={setRace} setStrMod={setStrMod} setDexMod={setDexMod} setConMod={setConMod}
+                    setIntMod={setIntMod} setWisMod={setWisMod} setChaMod={setChaMod}
+                />
             case "class": 
-                return <CreatorClasses />
+                return <CreatorClasses setMainClass={setMainClass}/>
             case "equipment":
                 return <CreatorEquipment />
             default:
-                return <CreatorDetails />
+                return <CreatorDetails setItem={setItem} setValue={setValue} setCharName={setCharName} setLevel={setLevel}/>
         }
     }
 

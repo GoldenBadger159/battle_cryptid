@@ -127,10 +127,11 @@
 }
 
 .button-selector {
+    display: flex;
     width: 400px;
     height: 75px;
     font-size: 20px;
-    text-align: left;
+    text-align: right;
     margin: 10px;
     color: var(--light-green1);
     background-color: var(--grey-scale1);
@@ -138,6 +139,33 @@
     border-color: var(--light-green1);
     border-radius: 10px;
     padding: 10px;
+}
+
+.option-name {
+    font-size: 20px;
+    text-align: left;
+    height: 50px;
+    width: 60%;
+    margin-right: auto;
+    color: var(--light-green1);
+    background-color: var(--grey-scale1);
+    border-style: ridge;
+    border-color: var(--light-green1);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.choose-item {
+    font-size: 12px;
+    text-align: center;
+    height: 50px;
+    width: 15%;
+    color: var(--light-green1);
+    background-color: var(--grey-scale1);
+    border-style: ridge;
+    border-color: var(--light-green1);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .sub-selector p {
