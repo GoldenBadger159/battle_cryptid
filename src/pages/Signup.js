@@ -6,6 +6,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 export default function Signup() {
+
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
@@ -13,6 +14,8 @@ export default function Signup() {
     const navigate = useNavigate()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
+
+    
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -26,7 +29,7 @@ export default function Signup() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            navigate("/")
+            navigate("/finish-signup")
         } catch {
             setError('Failed to create an account')
         }

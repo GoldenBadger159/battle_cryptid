@@ -69,14 +69,16 @@ header {
     margin-left: 0;
 }
 
-.top div {
+.top-info {
     margin-right: 2rem;
+    display: flex;
 }
 
 .authorize {
     text-decoration: none;
     color: var(--white);
     margin: 10px;
+    width: fit-content;
 }
 
 .social {

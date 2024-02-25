@@ -61,7 +61,7 @@ export default function Home() {
                     <p>Craft your unique persona, define your strengths, and embark on adventures that will shape the destiny of your character. 
                         Dive into a world of endless possibilities and epic storytelling.
                     </p>
-                    <Link className="mid-home" to="/no-creation">Create Today!</Link>
+                    <Link className="mid-home" to="/creation">Create Today!</Link>
                 </div>
                 <div class="discord">
                     <h1>Join Our Discord!</h1>
