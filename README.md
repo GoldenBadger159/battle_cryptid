@@ -2,9 +2,9 @@
 
 This is the code for a react web app using firebase. The purpose of this app is to act 
 as the landing page and companion app for a ttrpg system of my own design. for this specific
-section I am focusing on the implimentation of firestore within the webpage
+section I am focusing on the javascript functions that make this project run.
 
-Youtube link: [Software Demo Video](https://youtu.be/MAO640EQRaQ)
+Youtube link: [Software Demo Video](https://youtu.be/t6PbyK5EdOQ)
 
 # Web Pages
 
@@ -27,6 +27,5 @@ React, Javascript, Html, Css, json
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
-* Complete the character creation page as it is not finished
-* Implement a firestore database to store user information and add functionality. 
-* Create a logout button module to appear instead of the login/signout buttons on the header when a user is signed in.
+* I will continue to add new features to my website 
+* I forgot to describe the try catch error handling I have done. check the finishSignup and Signup pages for that. 
