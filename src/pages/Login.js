@@ -1,4 +1,4 @@
-import React, { useRef, useState} from "react";
+import React, { useState} from "react";
 import {Form, Button, Card, Alert, Container} from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 import { Link, useNavigate } from "react-router-dom"
@@ -6,8 +6,8 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 export default function Signup() {
-    const emailRef = useRef()
-    const passwordRef = useRef()
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
     const { login } = useAuth()
     const navigate = useNavigate()
     const [error, setError] = useState('')
@@ -19,7 +19,7 @@ export default function Signup() {
         try {
             setError('')
             setLoading(true)
-            await login(emailRef.current.value, passwordRef.current.value)
+            await login(email, password)
             navigate("/")
         } catch {
             setError('Failed to sign in')
@@ -42,11 +42,11 @@ export default function Signup() {
                             <Form onSubmit={handleSubmit}>
                                 <Form.Group id="email">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" ref={emailRef} required />
+                                    <Form.Control type="email" onChange={(e) => setEmail(e.target.value)} />
                                 </Form.Group>
                                 <Form.Group id="password">
                                     <Form.Label>Password</Form.Label>
-                                    <Form.Control type="password" ref={passwordRef} required />
+                                    <Form.Control type="password" onChange={(e) => setPassword(e.target.value)} />
                                 </Form.Group>
                                 <Button disabled={loading} className="w-100 text-center mt-2" type="submit"
                                 style={{backgroundColor: '#0b1321ff', color: '#67a170ff', border: '2px ridge #67a170ff'}}>Login</Button>

@@ -1,4 +1,4 @@
-import React, { useRef, useState} from "react";
+import React, { useState} from "react";
 import db from "../firebase"
 import { doc, setDoc } from "firebase/firestore"
 import {Form, Button, Card, Alert, Container} from 'react-bootstrap';
@@ -10,7 +10,7 @@ import Footer from "../components/Footer"
 export default function FinishSignup() {
     const { currentUser } = useAuth()
     const [error, setError] = useState('')
-    const usernameRef = useRef()
+    const [username, setUsername] = useState("")
     const navigate = useNavigate("/")
     const [loading, setLoading] = useState(false)
 
@@ -24,13 +24,14 @@ export default function FinishSignup() {
             setError("")
             console.log(uid)
             console.log(email)
-            console.log(usernameRef.current.value)
+            console.log(username)
             await setDoc(doc(db, "users", uid), {
-                username: usernameRef.current.value, 
+                username: username, 
                 email: email
             })
             navigate("/")
-        } catch {
+        } catch (error){
+            console.error("Error adding document: ", error)
             setError("Failed to complete signup")
         }
 
@@ -51,7 +52,7 @@ export default function FinishSignup() {
                             <Form onSubmit={handleSubmit}>
                                 <Form.Group id="username">
                                     <Form.Label>Username</Form.Label>
-                                    <Form.Control type="text" ref={usernameRef} required />
+                                    <Form.Control type="text" onChange={(e) => {setUsername(e.target.value)}} />
                                 </Form.Group>
                                 <Button disabled={loading} className="w-100 text-center mt-2" type="submit"
                                     style={{backgroundColor: '#0b1321ff', color: '#67a170ff', border: '2px ridge #67a170ff'}}>Finish Signup</Button>
