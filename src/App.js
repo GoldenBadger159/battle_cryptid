@@ -10,6 +10,7 @@ import CharacterManager from "./pages/CharacterManager.js";
 import NoCreation from "./pages/NoCreation.js"
 import FinishSignup from "./pages/FinishSignup.js";
 
+
 function App() {
 
   

@@ -7,6 +7,7 @@ export default function UserInfo() {
     const { currentUser } = useAuth()
     const { logout } = useAuth()
 
+    
 
     async function handleLogout() {
         try {
@@ -17,9 +18,10 @@ export default function UserInfo() {
     }
 
     if (currentUser != null) {
+        
         return (
             <>
-                <p className="authorize" >Welcome {currentUser.email}</p>
+                <p className="authorize" >Welcome </p>
                 <p onClick={handleLogout} className="authorize">Logout</p>
             </>
         )

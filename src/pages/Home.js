@@ -73,7 +73,7 @@ export default function Home() {
                 </div>
                 <div className="news">
                     <h1>Newest Developments</h1>
-                    <div class="news-content">
+                    <div className="news-content">
                         <h2>Bestiary Has Been Updated!</h2>
                         <p>Embark on a journey of discovery with our latest update to the Bestiary! We are thrilled to announce the addition of several captivating 
                             creatures waiting to be encountered on your adventures. From mystical beings to fearsome monsters, our expanded bestiary promises an enriched 

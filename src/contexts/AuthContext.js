@@ -23,6 +23,10 @@ export function AuthProvider({ children }) {
         return signOut(auth)
     }
 
+    // async function GetUserData() {
+    //     const userData = onAuthStateChanged(auth, ())
+    // }
+
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setCurrentUser(user)
