@@ -1,6 +1,6 @@
 import React, { useState} from "react";
-import db from "../firebase"
-import { doc, setDoc } from "firebase/firestore"
+import app from "../firebase"
+import { doc, getFirestore, setDoc } from "firebase/firestore"
 import {Form, Button, Card, Alert, Container} from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from "react-router-dom";
@@ -8,6 +8,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 export default function FinishSignup() {
+    const db = getFirestore(app)
     const { currentUser } = useAuth()
     const [error, setError] = useState('')
     const [username, setUsername] = useState("")

@@ -11,8 +11,8 @@ export default function UserInfo() {
     async function handleLogout() {
         try {
             await logout()
-        } catch {
-            console.log('Failed to logout')
+        } catch (e) {
+            console.error('Failed to logout', e)
         }
     }
 

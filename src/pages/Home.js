@@ -48,7 +48,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="section2">
-                <div class="creation">
+                <div className="creation">
                     <h1>Create Your Character!</h1>
                     <p>Whether you're a seasoned adventurer or a newcomer to the realm of tabletop gaming, our user-friendly tool is your gateway 
                         to crafting the hero you've always envisioned.
@@ -63,7 +63,7 @@ export default function Home() {
                     </p>
                     <Link className="mid-home" to="/creation">Create Today!</Link>
                 </div>
-                <div class="discord">
+                <div className="discord">
                     <h1>Join Our Discord!</h1>
                     <p>The Official Battle Cryptid Discord Server is a hub dedicated to answering your queries, keeping you in the loop about community updates,
                         and fostering creativity. Engage with fellow memebers to share your ideas, concept art, and contribute to the ever-expanding lore. 
@@ -71,7 +71,7 @@ export default function Home() {
                     </p>
                     <a className="mid-home" target="_blank" rel="noreferrer" href="https://discord.gg/CjEjzEat4J" >Join Now!</a>
                 </div>
-                <div class="news">
+                <div className="news">
                     <h1>Newest Developments</h1>
                     <div class="news-content">
                         <h2>Bestiary Has Been Updated!</h2>
